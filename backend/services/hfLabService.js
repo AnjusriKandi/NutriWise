@@ -5,13 +5,14 @@ async function analyzeLabReport(imageUrl) {
   try {
     // Connect to your Space
     // Use the Space name: "nutriwise95/nutriwise-ocr"
-    const client = await Client.connect("nutriwise95/nutriwise-ocr");
+    const client = await Client.connect(process.env.HF_LAB_ANALYSIS_API);
 
     console.log("Calling HF via Gradio Client with URL:", imageUrl);
 
     // Call the specific API named 'predict_api' defined in your app.py
     const result = await client.predict("/predict_api", {
-      url: imageUrl,
+      image: null,
+      image_url: imageUrl,
     });
 
 
