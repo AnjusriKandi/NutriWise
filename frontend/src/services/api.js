@@ -19,7 +19,7 @@ export const fetchSuggestions = (userId) => {
 
 export const verifyEmailOTP = (userId, otp) => {
   return axios.post(
-    "http://localhost:5000/api/auth/verify-email",
+    "https://nutriwise-cmpb.onrender.com/api/auth/verify-email",
     { userId, otp },
     { withCredentials: true }
   );

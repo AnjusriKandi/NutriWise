@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
 
-const API_BASE_URL = "http://localhost:5000/api/auth";
+const API_BASE_URL = "https://nutriwise-cmpb.onrender.com/api/auth";
 
 // Creating context
 const AuthContext = createContext();
@@ -24,7 +24,7 @@ export const UserLoginProvider = ({ children }) => {
       // 🔹 Case 1: Google login redirect
       if (googleToken) {
         try {
-          const res = await fetch("http://localhost:5000/api/auth/me", {
+          const res = await fetch("https://nutriwise-cmpb.onrender.com/api/auth/me", {
             headers: {
               Authorization: `Bearer ${googleToken}`,
             },
@@ -174,7 +174,7 @@ export const UserLoginProvider = ({ children }) => {
 
   // Google Sign-in is disabled since it requires complex OAuth implementation on a custom backend
   const signInWithGoogle = () => {
-    window.location.href = "http://localhost:5000/api/auth/google";
+    window.location.href = "https://nutriwise-cmpb.onrender.com/api/auth/google";
   };
 
   // The value exposed by the context provider
