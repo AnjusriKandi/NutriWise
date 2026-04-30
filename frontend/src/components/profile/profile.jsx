@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useAuth } from "../../contexts/UserLoginContext";
 import api from "../../api/axios";
 import { useNavigate } from "react-router-dom";
-import "./Profile.css";
+import "./profile.css";
 
 const Profile = () => {
   const { userId, currentUser, isAuthenticated } = useAuth();
