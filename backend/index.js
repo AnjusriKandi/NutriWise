@@ -30,7 +30,7 @@ const challengeRoutes = require("./routes/challengeRoutes");
 
 // Middleware
 app.use(cors({
-  origin: "https://nutriwise-smoky.vercel.app/",
+  origin: "https://nutriwise-smoky.vercel.app",
   credentials: true,
 }));
 
