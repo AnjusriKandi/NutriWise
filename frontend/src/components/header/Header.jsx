@@ -4,7 +4,7 @@ import { useAuth } from '../../contexts/UserLoginContext.jsx';
 import { useSidebar } from '../../contexts/SidebarContext'; 
 import { FaRegCalendarAlt } from "react-icons/fa";
 
-import './header.css';
+import './Header.css';
 
 const Header = () => {
     const { isAuthenticated, currentUser, logOut } = useAuth();
