@@ -25,7 +25,7 @@ router.get(
   (req, res) => {
     const accessToken = generateAccessToken(req.user._id);
     res.redirect(
-      `http://localhost:5173/profile?token=${accessToken}&login=google`
+      `https://nutriwise-smoky.vercel.app/profile?token=${accessToken}&login=google`
     );
   }
 );
