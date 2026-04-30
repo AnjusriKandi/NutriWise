@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { getLatestDietPlan } from "../../services/dietService";
-import "./WeeklyDietPlan.css";
+import "./weeklyDietPlan.css";
 import { PiCookingPotFill } from "react-icons/pi";
 
 export default function WeeklyDietPlan() {
